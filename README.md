@@ -57,16 +57,16 @@ The dataset consists of the following features:
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your_username/medical-charges-prediction.git
+    git clone https://github.com/chihebmezrigui1/insurance_prediction.git
     ```
 
-2. Navigate to the project directory:
+2. Install dependencies if you haven't already:
 
     ```bash
-    cd medical-charges-prediction
+    pip install -r requirements.txt
     ```
 
-3. Open the Jupyter Notebook `medical_charges_prediction.ipynb` and run the code to see the predictions and analysis.
+3. Open the Notebook `insurance_prediction.ipynb`  
 
 ## Model Performance
 
@@ -79,19 +79,15 @@ To make the prediction model accessible through a simple web interface, this pro
 
 ### How to Run the Streamlit App
 
-1. Install Streamlit if you haven't already:
 
-    ```bash
-    pip install streamlit
-    ```
 
-2. In the project directory, run the following command to launch the Streamlit app:
+1. In the project directory, run the following command to launch the Streamlit app:
 
     ```bash
     streamlit run app.py
     ```
 
-3. The app will open in your web browser where you can input the necessary data (age, BMI, smoking status, etc.), and it will display the predicted medical charges based on the trained model.
+2. The app will open in your web browser where you can input the necessary data (age, BMI, smoking status, etc.), and it will display the predicted medical charges based on the trained model.
 
 ### Streamlit Interface
 
