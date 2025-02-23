@@ -5,8 +5,6 @@ This project is ©2025 Chihab MEZRIGUI . All rights reserved.
 
 You may not reproduce, distribute, or modify this project without permission from the author.
 
-This project is for educational purposes only and is not intended for commercial use.
-
 
 # Medical-Insurance-Cost-Estimation-Using-Machine-Learning
 
