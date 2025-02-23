@@ -1,11 +1,4 @@
 
-## License and Copyright
-
-This project is ©2025 Chihab MEZRIGUI . All rights reserved.
-
-You may not reproduce, distribute, or modify this project without permission from the author.
-
-
 # Medical-Insurance-Cost-Estimation-Using-Machine-Learning
 
 This repository contains a machine learning model built using linear regression to predict medical charges, along with a sensitivity analysis to assess the stability and reliability of the model.
@@ -112,3 +105,13 @@ Linear regression serves as a useful baseline for predicting medical expenses ba
 ## Acknowledgements
 
 The dataset used in this project is publicly available on Kaggle.
+
+
+
+## License and Copyright
+
+This project is ©2025 Chihab MEZRIGUI . All rights reserved.
+
+You may not reproduce, distribute, or modify this project without permission from the author.
+
+
