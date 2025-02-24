@@ -1,5 +1,5 @@
 
-# Medical-Insurance-Cost-Estimation-Using-Machine-Learning
+# Medical Insurance Cost Estimation Using Machine Learning
 
 This repository contains a machine learning model built using linear regression to predict medical charges, along with a sensitivity analysis to assess the stability and reliability of the model.
 
