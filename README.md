@@ -1,116 +1,66 @@
+# 🧠 Medical Insurance Cost Estimation Using Machine Learning
 
-# Medical Insurance Cost Estimation Using Machine Learning
+This project predicts **medical insurance charges** using a **linear regression model**, and includes a **sensitivity analysis** to test the model’s stability. A user-friendly **Streamlit web app** is also provided for live predictions.
 
-This repository contains a machine learning model built using linear regression to predict medical charges, along with a sensitivity analysis to assess the stability and reliability of the model.
+---
 
-## Overview
+## 📌 Overview
 
-Understanding the determinants of healthcare costs is critical for both individuals and healthcare organizations. By identifying the key factors that influence medical charges, stakeholders can allocate resources more effectively and make informed policy decisions. This project leverages linear regression to predict healthcare costs based on demographic and health-related information.
+Predicting healthcare costs helps individuals plan better and assists healthcare providers in making data-driven decisions. This project explores how demographic and health-related factors influence medical charges, using machine learning for prediction and analysis.
 
-## Dataset
+---
 
-The dataset consists of the following features:
+## 📂 Dataset
 
-- **age**: The age of the individual.
-- **sex**: Gender of the individual (male or female).
-- **bmi**: Body Mass Index (BMI) value.
-- **children**: Number of children or dependents.
-- **smoker**: Smoking status (yes or no).
-- **region**: The region where the individual resides.
-- **charges**: The medical expenses billed to the individual by insurance.
+The dataset (`insurance.csv`) contains the following features:
 
-## Key Tasks
+| Feature     | Description                                 |
+|-------------|---------------------------------------------|
+| `age`       | Age of the individual                       |
+| `sex`       | Gender (`male` or `female`)                 |
+| `bmi`       | Body Mass Index                             |
+| `children`  | Number of children/dependents               |
+| `smoker`    | Smoking status (`yes` or `no`)              |
+| `region`    | Geographic region                           |
+| `charges`   | Medical charges billed by insurance         |
 
-### Data Preprocessing
-- Handle missing or inconsistent data.
-- Convert categorical columns (such as sex, smoker, region) into numerical values using encoding techniques.
-- Normalize or standardize numerical features if necessary.
+---
 
-### Exploratory Data Analysis (EDA)
-- Investigate the distribution of important features like age, BMI, and charges.
-- Explore relationships between input variables and medical charges.
-- Identify any potential outliers or influential data points.
+## ✅ Project Workflow
 
-### Model Development
-- Split the dataset into training and testing subsets.
-- Build a linear regression model to make predictions.
-- Evaluate the model using performance metrics like R-squared and Mean Squared Error (MSE).
+### 1. 📊 Data Preprocessing
+- Handle missing or inconsistent data
+- Encode categorical features (`sex`, `smoker`, `region`)
+- Normalize or standardize numerical features if needed
 
-### Advanced Techniques
-- Perform a sensitivity analysis to determine the impact of changes in the training data on model outcomes.
+### 2. 🕵️ Exploratory Data Analysis (EDA)
+- Visualize distributions of features like `age`, `bmi`, and `charges`
+- Identify relationships and correlations
+- Detect outliers or extreme values
 
-## Project Files
+### 3. 🧪 Model Development
+- Split data into training and testing sets
+- Train a Linear Regression model
+- Evaluate using **R² score** and **Mean Squared Error (MSE)**
 
-- **medical_charges_prediction.ipynb**: Jupyter Notebook containing steps for data processing, exploratory analysis, model training, and sensitivity testing.
-- **insurance.csv**: The dataset containing medical charges and associated attributes.
+### 4. 📈 Sensitivity Analysis
+- Analyze how the model performance varies with different data splits
+- Assess model robustness and generalization
 
-## Required Libraries
+---
 
-- Python 3.x
-- Jupyter Notebook
-- pandas
-- scikit-learn
-- matplotlib
+## 🗂 Project Files
 
-## How to Use
+- `medical_charges_prediction.ipynb`: Jupyter notebook with all steps (EDA, modeling, sensitivity analysis)
+- `insurance.csv`: Dataset used for training
+- `app.py`: Streamlit app to make real-time predictions
+- `requirements.txt`: List of required packages
 
-1. Clone the repository:
+---
 
-    ```bash
-    git clone https://github.com/chihebmezrigui1/insurance_prediction.git
-    ```
+## 🛠 Requirements
 
-2. Install dependencies if you haven't already:
+Install dependencies:
 
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Open the Notebook `insurance_prediction.ipynb`  
-
-## Model Performance
-
-- The linear regression model produced an **R-squared** value of **0.78** and a **Mean Squared Error** of **0.23**.
-- The sensitivity analysis indicated significant variability in the model's performance across different training and testing splits, suggesting that the model's results are sensitive to variations in the dataset.
-
-## Streamlit Deployment
-
-To make the prediction model accessible through a simple web interface, this project also includes a **Streamlit app**.
-
-### How to Run the Streamlit App
-
-
-
-1. In the project directory, run the following command to launch the Streamlit app:
-
-    ```bash
-    streamlit run app.py
-    ```
-
-2. The app will open in your web browser where you can input the necessary data (age, BMI, smoking status, etc.), and it will display the predicted medical charges based on the trained model.
-
-### Streamlit Interface
-
-The Streamlit app allows users to:
-- Input their **age**, **BMI**, **number of children**, **smoking status**, and **region**.
-- See a prediction of the **medical charges** based on the input data.
-
-The app uses the trained model and presents the prediction in a user-friendly interface with interactive controls.
-
-## Conclusion
-
-Linear regression serves as a useful baseline for predicting medical expenses based on demographic and health-related information. Further refinements, such as using regularized regression methods and a deeper sensitivity analysis, could improve the model’s generalizability and robustness.
-
-## Acknowledgements
-
-The dataset used in this project is publicly available on Kaggle.
-
-
-
-## License and Copyright
-
-This project is ©2025 Chihab MEZRIGUI . All rights reserved.
-
-You may not reproduce, distribute, or modify this project without permission from the author.
-
-
+```bash
+pip install -r requirements.txt
