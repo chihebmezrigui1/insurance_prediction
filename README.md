@@ -37,7 +37,6 @@ The dataset consists of the following features:
 - Evaluate the model using performance metrics like R-squared and Mean Squared Error (MSE).
 
 ### Advanced Techniques
-- Explore regularized regression models (Ridge, Lasso) to evaluate whether they improve the model's performance.
 - Perform a sensitivity analysis to determine the impact of changes in the training data on model outcomes.
 
 ## Project Files
